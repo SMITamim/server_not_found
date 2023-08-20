@@ -1,0 +1,208 @@
+.MainBody{
+    min-height: 700px;
+    width: 100%;
+    
+}
+
+.Contact{
+    background: linear-gradient(to right, #007bff, #0056b3); /* Adjust gradient shades as needed */
+    
+}
+
+.sliding-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slideLeft 10s linear infinite;
+    color: #007bff; /* Blue color */
+    font-size: 24px; /* Larger font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow for depth */
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.custom-navbar {
+    background: linear-gradient(to left, #007bff, #0056b3); 
+     
+}
+
+.serviceCard{
+    background: linear-gradient(to left, #007bff, #0056b3); 
+    margin-top: 0%;
+}
+
+.servicerow{
+    margin-top: 10%;
+    
+}
+
+.zoom-card {
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+.zoom-card:hover {
+    transform: scale(1.05); /* Zoom in by 5% on hover */
+    z-index: 1; /* Bring the hovered card to the front */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.navbar-nav.right-align {
+    margin-left: auto;
+}
+
+.social-icon {
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+}
+
+.social-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.social-icon i {
+    font-size: 20px;
+    color: #2f1f8c;
+}
+
+.social-icon:hover a {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 249, 249, 0.3);
+}
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+.customCeoImg{
+    border: none;
+}
+
+/* Styles for the scroll-up button */
+#scrollUpButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  #scrollUpButton.glowing {
+    animation: glowing 2s infinite;
+  }
+  
+  #scrollUpButton:hover {
+    animation: none;
+    background-color: lightblue;
+  }
+  
+  /* Glowing animation for the scroll-up button */
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 10px blue;
+    }
+    50% {
+      box-shadow: 0 0 20px blue;
+    }
+    100% {
+      box-shadow: 0 0 10px blue;
+    }
+  }
+  
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-to-top-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: blue; /* Bright red color by default */
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(255, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.scroll-to-top-button:hover {
+    background-color: #ece1e1; /* Dark color on hover */
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(249, 248, 248, 0.2); /* Increased shadow on hover */
+}
+
+.scroll-to-top-button i {
+    font-size: 20px;
+}
+
+
